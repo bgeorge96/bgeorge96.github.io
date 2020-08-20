@@ -14,8 +14,7 @@ class MusicPage extends React.Component {
             {name:"Cool Song3"},
             {name:"Cool Song5"},
         ]
-        const chunker = chunk ? chunk(things,2) : [things];
-        console.log(chunk)
+        const chunker = chunk(things,2);
         return (
             <React.Fragment>
                 {chunker.map( (groupedThings,index) =>
