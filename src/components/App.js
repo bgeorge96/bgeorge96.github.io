@@ -44,8 +44,6 @@ export default function App() {
           <Toolbar />
           <Switch>
             {routes.map((routeInfo, key) => {
-              console.log('route', routeInfo.path);
-              console.log('comp', routeInfo.component);
               return (
                 <Route
                   exact
@@ -55,16 +53,7 @@ export default function App() {
                 />
               );
             })}
-            {/* <Route path='/help'>
-                        <Typography paragraph>
-                            Help Page!
-                        </Typography>
-                    </Route>
-                    <Route path='/'>
-                        <Typography paragraph>
-                            Home Page!
-                        </Typography>
-                    </Route> */}
+
           </Switch>
         </main>
       </div>
